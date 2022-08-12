@@ -1,10 +1,10 @@
 
-import LogoTitle from '../../assets/images/logo-s.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPython, faJava, faAndroid, faGitAlt, faReact, faJsSquare} from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react'
-import Logo from './Logo'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['K', 'e', 'v','i','n',',']
@@ -34,7 +34,28 @@ const Home = () => {
         <h2> Developer / Student / TA </h2>
         <Link to="/contact" className="flat-button">CONTACT ME</Link>
       </div>
-      <Logo />
+      <div className='stage-cube-cont'>
+        <div className='cubespinner'>
+          <div className="face1">
+            <FontAwesomeIcon icon={faPython} color="#4B8BBE" />
+          </div>
+          <div className="face2">
+            <FontAwesomeIcon icon={faJava} color="#D0A384" />
+          </div>
+          <div className="face3">
+            <FontAwesomeIcon icon={faAndroid} color="#A4C639" />
+          </div>
+          <div className="face4">
+            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+          </div>
+          <div className="face5">
+            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+          </div>
+          <div className="face6">
+            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
