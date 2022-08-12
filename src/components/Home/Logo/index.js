@@ -36,7 +36,7 @@ const Logo = () => {
 
   return (
     <div className="logo-container" ref={bgRef}>
-      <img ref={solidLogoRef} className="solid-logo" src={LogoS} alt="S"/>
+      <img z className="solid-logo" src={LogoS} alt="S"/>
 
       <svg
         width="559pt"
