@@ -1,4 +1,4 @@
-import emailjs from '@emailjs/browser'
+import  emailjs  from '@emailjs/browser'
 import { useEffect, useRef, useState } from 'react'
 import { MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
 import AnimatedLetters from '../AnimatedLetters'
