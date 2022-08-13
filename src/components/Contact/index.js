@@ -1,4 +1,4 @@
-// import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser'
 import { useEffect, useRef, useState } from 'react'
 import { MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
 import AnimatedLetters from '../AnimatedLetters'
@@ -13,25 +13,25 @@ const Contact = () => {
     }, 3000)
   }, [])
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault()
-  //   emailjs
-  //     .sendForm(
-  //       'service_s5ir3xa',
-  //       'template_6j5kxfy',
-  //       refForm.current,
-  //       'dghC7Ko0_iMoJiJlJ'
-  //     )
-  //     .then(
-  //       () => {
-  //         alert("Messsage successfully sent!")
-  //         window.location.reload(false)
-  //       },
-  //       () => {
-  //         alert('Failed to send the message, please try again')
-  //       }
-  //     )
-  // }
+  const sendEmail = (e) => {
+    e.preventDefault()
+    emailjs
+      .sendForm(
+        'service_s5ir3xa',
+        'template_6j5kxfy',
+        refForm.current,
+        'dghC7Ko0_iMoJiJlJ'
+      )
+      .then(
+        () => {
+          alert("Messsage successfully sent!")
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send the message, please try again')
+        }
+      )
+  }
 
 
   return (
@@ -52,7 +52,7 @@ const Contact = () => {
           a good fit for either, or you simply have a question, feel free to 
           contact me!
         </p>
-        {/* <div className="contact-form">
+        <div className="contact-form">
           <form ref={refForm} onSubmit={sendEmail}>
             <ul>
               <li className='half'>
@@ -72,7 +72,7 @@ const Contact = () => {
               </li>
             </ul>
           </form>
-        </div> */}
+        </div>
       </div>
       <div className='info-map'>
         Kevin Jiang,
