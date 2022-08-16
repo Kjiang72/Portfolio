@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import LogoS from '../../assets/images/profile.jpg'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faLinkedin, faGithub, faYoutube, faSkype} from '@fortawesome/free-brands-svg-icons'
+import {faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faHome, faUser, faSuitcase} from '@fortawesome/free-solid-svg-icons'
 const Sidebar = () => {
   return (
